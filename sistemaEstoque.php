@@ -1,13 +1,8 @@
 <?php
 require 'config.php';
 ?>
-<html>
-<body>
-    <?php
-        if(isset($_GET['desc_up'])){
-            $descUpdate=addslashes($_GET['desc_up']);
-        }
-    ?>
+
+<h1>Listagem de dados</h1>
 
 <table border="1">  
 

@@ -19,7 +19,7 @@ if($descricao){
         $sql ->bindValue(':quantidade',$quantidade);
         $sql->execute();
 
-        header("Location:caminhobd.php");
+        header("Location:sistemaEstoque.php");
         exit;
     }else{
         header("Location:insertProdutos.php");
@@ -28,6 +28,3 @@ if($descricao){
     header("Location:insertProdutos.php");
     exit;
 }
-
-
-
