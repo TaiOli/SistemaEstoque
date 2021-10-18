@@ -2,22 +2,12 @@
 require 'config.php';
 ?>
 
-<h1>Lista de Produtos</h1>
-
-<form method="POST" action="buscar.php"> 
 <label>Buscar Produto:</label>
 <input type="text" name="buscar" size="50" placeholder="Insira o nome do produto">
 <button>Buscar</button>
 <hr>
 
-<nav>
-    <label class="logo">Sistema de Estoque</label>
-    <ul>
-        <li><a href="#"></a>Inicio</li>
-        <li>
-    </ul>
-
- 
+<form method="POST" action="buscar.php">  
 <table border="1">  
 
         <th>Descrição</th>
@@ -27,7 +17,9 @@ require 'config.php';
     <tr>  
     <?php
     // Busca para Listagem dos dados
-        $sql=$pdo->prepare("SELECT * FROM produto");   
+
+        $buscar=$_POST['buscar'];
+        $sql=$pdo->prepare("SELECT * FROM produto WHERE descricao LIKE '$buscar' '%'");   
         $sql->execute();
         while($lista= $sql->fetch(PDO::FETCH_ASSOC)):   
     ?>        
@@ -46,4 +38,3 @@ require 'config.php';
 <br>
 <br>
 <a href="sistemaEstoque.php">Lista de Produtos</a>
-
