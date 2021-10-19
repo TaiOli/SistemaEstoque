@@ -1,0 +1,47 @@
+body{
+    background: #ffff9e;
+}
+
+h1{
+    font-size: 30px;
+    border-width: 2px 5px 3px 6px; 
+    border-style: dashed dotted; 
+    border-color: rgb(134, 45, 45) rgb(206, 106, 76) rgb(161, 64, 64) rgb(194, 78, 78); 
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+ul li:hover{
+    background-color:darkgray;
+}
+
+li{
+    display: inline-block;
+    margin: 0 15px;
+
+}
+nav{
+    display: inline-block;
+    justify-content: space-between;
+    margin: auto 5px;
+    background-color:black;
+    height: 40px;
+    position: fixed; 
+    width: 98%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('assets/inserir.jpg');
+    height: 250px;
+}

@@ -1,22 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="sistemaEstoque.php">Home</a></li>
+                    <li><a href="editar.php">Editar</a></li>
+                    <li><a href="inserir.php">Cadastrar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Lista de Produtos</h1>    
+    </body>
+</html>
+
 <?php
 require 'config.php';
 ?>
-
-<h1>Lista de Produtos</h1>
-
+<br>
 <form method="POST" action="buscar.php"> 
-<label>Buscar Produto:</label>
-<input type="text" name="buscar" size="50" placeholder="Insira o nome do produto">
-<button>Buscar</button>
-<hr>
-
-<nav>
-    <label class="logo">Sistema de Estoque</label>
-    <ul>
-        <li><a href="#"></a>Inicio</li>
-        <li>
-    </ul>
-
+        <label>Buscar Produto:</label>
+        <input type="text" name="buscar" size="50" placeholder="Insira o nome do produto">
+        <button>Buscar</button>
+        <hr>
+        <br>
  
 <table border="1">  
 
@@ -34,16 +47,10 @@ require 'config.php';
             <tr><td><?php echo $lista["descricao"];?>
             <td><?php echo $lista["quantidade"];?></td>
             <td><a href="editar.php?id=<?php echo $lista["id"];?>"> Editar</a></td>  
-            <td><a href="excluir.php?id=<?php echo $lista["id"];?>"> Excluir</a></td>  
+            <td><a href="excluir.php?id=<?php echo $lista["id"];?>"> Excluir</a></td> 
+
         <?php      
            endwhile;
         ?> 
     </tr>
 </table>
-
-<br>
-<a href="inserir.php">Cadastrar Produtos</a>
-<br>
-<br>
-<a href="sistemaEstoque.php">Lista de Produtos</a>
-

@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="sistemaEstoque.php">Home</a></li>
+                <li><a href="editar.php">Editar</a></li>
+                <li><a href="inserir.php">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
 <?php
 require 'config.php';
 
@@ -34,14 +56,19 @@ require 'config.php';
 }
 ?>
 
-
 <h1>Cadastrar Produtos</h1>
 <form method="POST" action="">
-    <label>
-        Descricao: <input type="text" name="descricao"/>
-    </label>
-    <label>
-        Quantidade: <input type="number" name="quantidade"/>
-    </label>
-    <input type="submit"  value="Salvar" name="crudSubmit"/>
+    <br>
+    <p>
+        <label for="descricao">Descricao:</label><br>
+        <input type="text" name="descricao">
+    </p>
+    <p>
+        <label for="quantidade">Quantidade:</label><br>
+        <input type="number" name="quantidade">
+    </p>
+    <hr>
+    <p>
+        <input type="submit" value="Salvar" name="crudSubmit">
+    </p>
 </form>

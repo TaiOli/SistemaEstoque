@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="sistemaEstoque.php">Home</a></li>
+                <li><a href="editar.php">Editar</a></li>
+                <li><a href="inserir.php">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
 <?php
 require 'config.php';
 
@@ -32,10 +54,9 @@ if(isset($_POST['atualizar'])){
 }
 ?>
 
-<html>
-<body>
 <h1>Alterar Produtos</h1>
-<form method="POST" action="">       
+<form method="POST" action="">   
+    <br>    
         <p>
                 <label for="descricao">Descricao:</label><br>
                 <input type="text" name="descricao" value="<?php echo $descricao;?>">
