@@ -11,7 +11,6 @@
             <nav>
                 <ul>
                     <li><a href="sistemaEstoque.php">Home</a></li>
-                    <li><a href="editar.php">Editar</a></li>
                     <li><a href="inserir.php">Cadastrar</a></li>
                 </ul>
             </nav>
