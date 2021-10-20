@@ -35,7 +35,7 @@ require 'config.php';
         <br>
  
 <!-- Tabela -->
-<table border="1">  
+<table border="1" id=tabela>  
 
         <th>Descrição</th>
         <th>Quantidade</th> 

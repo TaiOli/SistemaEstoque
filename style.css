@@ -41,6 +41,16 @@ nav ul li a {
     color: white;
 }
 
+table#tabela th{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 300px;
+}
+table#tabela{
+    text-align: center;
+}
+
 header{
     height: calc(100vh - 150px);
     background: no-repeat center/cover url('assets/estoque.jpg');
