@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<!-- chamando a folha de estilo -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Menu -->
     <body>
         <header>
             <nav>
@@ -15,14 +16,17 @@
                 </ul>
             </nav>
         </header>
+        <!-- Titulo -->
         <h1>Lista de Produtos</h1>    
     </body>
 </html>
-
+<!-- chamando configurações de conexão com o banco -->
 <?php
 require 'config.php';
 ?>
+
 <br>
+<!-- Campo de Busca -->
 <form method="POST" action="buscar.php"> 
         <label>Buscar Produto:</label>
         <input type="text" name="buscar" size="50" placeholder="Insira o nome do produto">
@@ -30,6 +34,7 @@ require 'config.php';
         <hr>
         <br>
  
+<!-- Tabela -->
 <table border="1">  
 
         <th>Descrição</th>

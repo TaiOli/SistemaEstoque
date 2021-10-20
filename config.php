@@ -1,5 +1,5 @@
 <?php
-
+//Configurações do banco
 $db_name='Estoque';
 $db_host='localhost:3306';
 $db_user='root';

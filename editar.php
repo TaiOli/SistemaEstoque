@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<!-- Chamando folha de estilo -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
+<!-- menu-->
 <body>
-    <header>
+    <header id="edit">
         <nav>
             <ul>
                 <li><a href="sistemaEstoque.php">Home</a></li>
@@ -19,9 +19,11 @@
 </body>
 </html>
 
+<!-- Chamando configuração de conexão com o banco -->
 <?php
 require 'config.php';
 
+//Busca dos dados pelo ID
  $descricao="";
  $quantidade="";
  
@@ -40,6 +42,7 @@ if(isset($_GET['id'])){
     }
 }
 
+//Verificação de clique no botão e Atualizando os dados
 if(isset($_POST['atualizar'])){
 
     $update = $pdo->prepare('UPDATE produto SET descricao=:descricao,quantidade=:quantidade WHERE id=:id');
@@ -52,7 +55,7 @@ if(isset($_POST['atualizar'])){
     }  
 }
 ?>
-
+<!-- Campos para alterar os produtos-->
 <h1>Alterar Produtos</h1>
 <form method="POST" action="">   
     <br>    

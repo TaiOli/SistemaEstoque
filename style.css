@@ -1,3 +1,4 @@
+/* Página de Estilo principal, editar e inserir*/
 body{
     background: #ffff9e;
 }
@@ -23,8 +24,8 @@ ul li:hover{
 li{
     display: inline-block;
     margin: 0 15px;
-
 }
+
 nav{
     display: inline-block;
     justify-content: space-between;
@@ -41,10 +42,19 @@ nav ul li a {
 }
 
 header{
-
     height: calc(100vh - 150px);
     background: no-repeat center/cover url('assets/estoque.jpg');
     height: 250px;
 }
 
+header#edit{
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('assets/editar.jpg');
+    height: 250px;
+}
 
+header#inserir{
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('assets/inserir.jpg');
+    height: 250px;
+}

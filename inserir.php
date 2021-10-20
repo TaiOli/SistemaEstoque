@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<!-- Chamando página de estilo -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
+<!-- Menu -->
 <body>
-    <header>
+    <header id="inserir">
         <nav>
             <ul>
                 <li><a href="sistemaEstoque.php">Home</a></li>
@@ -18,11 +18,12 @@
     </header>
 </body>
 </html>
-
+<!-- Chamando configuração de conexao com o banco -->
 <?php
 require 'config.php';
 
-    if(isset($_POST['crudSubmit'])){
+//Verificação de clique no botão e inserindo dados na tabela
+    if(isset($_POST['inserir'])){
 
         $descricao=$_POST['descricao'];
         $quantidade=$_POST['quantidade'];
@@ -68,6 +69,6 @@ require 'config.php';
     </p>
     <hr>
     <p>
-        <input type="submit" value="Salvar" name="crudSubmit">
+        <input type="submit" value="Salvar" name="inserir">
     </p>
 </form>
