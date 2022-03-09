@@ -11,3 +11,7 @@ Regular a entrada e saida de produtos otimizando os resultados da empresa.
 ## Tabela
 ![](https://github.com/TaiOli/SistemaEstoque/blob/master/tabela.png)
 
+##  Página Cadastrar
+![](https://github.com/TaiOli/SistemaEstoque/blob/master/cadastrar.png)
+
+
